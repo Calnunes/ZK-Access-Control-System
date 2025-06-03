@@ -134,3 +134,33 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Circom build artifacts
+*.r1cs
+*.sym
+*.wasm
+witness.wtns
+*.ptau
+proof.json
+public.json
+verification_key.json
+*.zkey
+
+# Compiled files
+*_cpp/
+*_js/
+*_wasm/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo

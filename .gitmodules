@@ -1,0 +1,3 @@
+[submodule "age_check/circomlib"]
+	path = age_check/circomlib
+	url = https://github.com/iden3/circomlib.git
