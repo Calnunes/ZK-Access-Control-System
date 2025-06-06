@@ -47,3 +47,21 @@ snarkjs groth16 prove age_check_final.zkey witness.wtns proof.json public.json
 snarkjs zkey export verificationkey age_check_final.zkey verification_key.json
 snarkjs groth16 verify verification_key.json public.json proof.json
 ```
+
+
+## Deploying the Smart Contract on PolkaVM
+1. Create the solidity verifier
+```bash
+snarkjs zkey export solidityverifier age_check_final.zkey Verifier.sol
+```
+- this creates a Verifier.sol file with a function like verifyProof() that returns true if the proof is valid under the constraints of the ZK Circuit.
+
+2. Compile the solidity contract.
+```bash
+# cargo install --git https://github.com/hyperledger/solang
+brew install hyperledger/solang/solang
+solang compile Verifier.sol --target substrate --emit wasm
+```
+
+
+

@@ -1,0 +1,34 @@
+# Circom specific
+*.r1cs
+*.sym
+*.wtns
+*.zkey
+*.ptau
+*.wasm
+*.json
+
+# Build artifacts
+age_check_cpp/age_check
+age_check_cpp/*.o
+age_check_cpp/*.dat
+
+# Node.js specific
+node_modules/
+.npm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Development
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+*~
+*.swp
+*.swo

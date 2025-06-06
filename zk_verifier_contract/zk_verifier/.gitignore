@@ -1,0 +1,28 @@
+# Rust/Cargo specific
+/target/
+/debug/
+/release/
+**/*.rs.bk
+Cargo.lock
+
+# Build artifacts
+*.wasm
+*.wasm.map
+*.contract
+*.artifact
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# ink! specific
+.ink/
+artifacts/
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo

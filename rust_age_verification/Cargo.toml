@@ -1,0 +1,11 @@
+[package]
+name = "rust_age_verification"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bellman = "0.14.0"
+rand = "0.8"
+ff = "0.13"
+bls12_381 = "0.8"
+pairing = "0.23"
